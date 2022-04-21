@@ -6,4 +6,4 @@ Lista de atividades: https://profbruno-ufc-qx.github.io/web-development/listas.h
 
 Lista | Link | Entrega 
 ----- | ---- | -------
-01    | https://profbruno-ufc-qx.github.io/web-development/atividades/le01.html |  
+01    | https://profbruno-ufc-qx.github.io/web-development/atividades/le01.html | https://github.com/EdOliveiraJr/Desenvolvimento-Web-2022.1/tree/main/Lista01
