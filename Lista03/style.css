@@ -32,4 +32,6 @@ div.recentsTzeets a {
     color: black;
 }
 
-
+div.talvezCurta li{
+    margin: 20px;
+}
