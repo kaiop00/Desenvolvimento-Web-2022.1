@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div.navegacao li, img, i, a {
+    padding: 10px;
+}
+
+div.navegacao li:hover {
+    background-color: rgb(15, 25, 20, 0.1);
+}
+
+div.listMenus a:hover {
+    background-color: rgb(15, 25, 20, 0.1);
+}
+
+div.listMenus a {
+    padding-inline: 50px;
+    color: black;
+}
+
+div.recentsTzeets a:hover {
+    color: red;
+}
+
+div.recentsTzeets a {
+    text-decoration: none;
+    margin: 0%;
+    padding-inline: 50px;
+    color: black;
+}
+
+
