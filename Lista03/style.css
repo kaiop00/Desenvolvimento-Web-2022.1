@@ -12,6 +12,7 @@ div.navegacao li, img, i, a {
 div.navegacao li:hover {
     background-color: rgb(15, 25, 20, 0.1);
     text-decoration: none;
+    border-radius: 40px;
 }
 
 div.navegacao a:hover {
@@ -26,6 +27,7 @@ div.navegacao button {
 
 div.listMenus a:hover {
     background-color: rgb(15, 25, 20, 0.1);
+    text-decoration: none;
 }
 
 div.listMenus a {
