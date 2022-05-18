@@ -53,6 +53,13 @@ div.recentsTzeets a {
     color: black;
 }
 
+div.input-group-text {
+    width: 320px;
+    border-radius: 30px;
+}
+
+
 div.talvezCurta li{
+    width: 300px;
     margin: 20px;
 }
