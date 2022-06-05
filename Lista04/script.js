@@ -9,7 +9,7 @@ window.addEventListener("load", function(){
     
     console.log(btnEnviar)
 
-    btnEnviar.disable = true
+    btnEnviar.disabled = true
     
 
     console.log(btnEnviar.disable)
@@ -25,18 +25,18 @@ window.addEventListener("load", function(){
         cont.innerHTML = contagem
 
         if(textArea.value.length === 0){
-            btn.disable = true
+            btn.disabled = true
             cont.style.color = "black"
         }
         else if(contagem < 140 && contagem >= 40 ) {
             cont.style.color = "black"
-            btn.disable = false
+            btn.disabled = false
         }else if(contagem < 40 && contagem >= 0 ){
             cont.style.color = "yellow"
-            btn.disable = false
+            btn.disabled = false
         }else{
             cont.style.color = "red"
-            btn.disable = true
+            btn.disabled = true
         }
     }
 
