@@ -1,6 +1,7 @@
 var selectMT = document.getElementById("meioTransporte")
 var selectTV = document.getElementById("tipoViagem")
-
+console.log(selectTV)
+console.log(selectMT)
 var optionTV1 = document.createElement("option")
 var optionTV2 = document.createElement("option")
 var optionTV3 = document.createElement("option")
@@ -103,6 +104,7 @@ function selectMTChange(){
         selectTV.appendChild(optionTV4)
         selectTV.appendChild(optionTV5)
     }
+    console.log(selectTV)
 }
 
 selectMT.addEventListener("change", function() {

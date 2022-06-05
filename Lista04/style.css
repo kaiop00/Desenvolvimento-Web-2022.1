@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
+    border: 2;
 }
 
 div.navegacao li, img, i, a {
@@ -76,4 +76,43 @@ div.talvezCurta img {
     height: 68px;
     width: 68px;
     border-radius: 50%;
+}
+
+
+
+div.configuracaoReply a:hover {
+    width: 10px;
+    background-color: rgb(29, 155, 240);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+div.multimidea a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+div.multimidea i{
+    color: black;
+    padding: 10px;
+
+}
+
+div.multimidea i:hover {
+    color: white;
+    background-color: rgb(29, 155, 240);
+    border-radius: 20px;
+}
+
+div.statusEnvio i{
+    color: black;
+    
+
+}
+
+div.statusEnvio i:hover {
+    color: white;
+    background-color: rgb(29, 155, 240);
+    border-radius: 20px;
 }
