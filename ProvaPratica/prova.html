@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    
+    <title>Prova Pratica DSW-2022.1</title>
+
+</head>
+<body class="bg-dark">
+   <div class="container bg-light">
+        <div class="row text-bg-dark m-4">
+            <h1> Resgate de Viagens </h1>
+        </div>
+        <div class="row m-4">
+            <label class="mr-3" for="meioTransporte">Selecione o Meio de Transporte:  </label>
+            <select class="form-select" name="Meio de transporte" id="meioTransporte">
+                <option id="aviao" value="aviao">Avião</option>
+                <option id="onibus" value="onibus">Ônibus</option>
+            </select>
+        </div>
+
+        <div class="row m-4">
+            <label class="mr-3" for="tipoViagem">Selecione o Tipo de Viagem:</label>
+            <select class="form-select" name="Tipo de viagem" id="tipoViagem">
+            </select>
+        </div>
+        
+        <div class="row m-4">
+            <label for="idaVolta" class="form-label">Ida e Volta</label>
+            <input type="checkbox" class="form-check-input" id="idaVolta" unchecked></input>
+        </div>
+        
+        <div class="row m-4" >
+            <button type="submit" class="btn btn-dark" id="btnEnviar"> Enviar </button>
+        </div>
+
+        <div class="row m-4">
+            <h3 id="saldo">Saldo Atual: 20000</h3>
+        </div>
+        
+        <div class="row m-4">
+                <h1>Historico</h1>
+        </div>
+        <div class="row m-4">
+            <table class="table table-dark table-striped table-hover" id="historico" border="1">
+                <tr>
+                    <th>Meio de transporte</th>
+                    <th>Tipo</th>
+                    <th>Ida e Volta</th>
+                    <th>Custo</th>
+                </tr>
+    
+            </table>
+        </div>
+
+        <div class="row m-4">
+            <h3 id = "total"> Total de viagens: </h3>
+        </div>        
+
+        
+    
+        
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
