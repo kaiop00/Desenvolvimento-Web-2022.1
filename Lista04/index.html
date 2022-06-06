@@ -61,41 +61,42 @@
                     
                     <h1>Home</h1>
                     <div class="header m-4">
-                        <div class="foto d-inline-flex">
-                            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQE9yYBO3Fnawg/profile-displayphoto-shrink_800_800/0/1606330548603?e=1654732800&amp;v=beta&amp;t=DiUM_AR1RFZusdvHFjYkelaXhbv7xVkzh6rVJAHTXvk" class="rounded-circle" alt = fotoperfil width="150">    
-                        </div>
-
-                       <div class="textarea m-4 d-inline-flex">
-                            <textarea class="form-control border-1" id="textarea" cols="70" rows="1"></textarea>
+                        <div class="d-flex align-items-center">
+                            <div class="foto flex-shirink-0">
+                                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQE9yYBO3Fnawg/profile-displayphoto-shrink_800_800/0/1606330548603?e=1654732800&amp;v=beta&amp;t=DiUM_AR1RFZusdvHFjYkelaXhbv7xVkzh6rVJAHTXvk" class="rounded-circle" alt = fotoperfil width="150">    
+                            </div>
+    
+                           <div class="textarea flex-grow-1 ms-3 align-items-center">
+                                <textarea class="form-control border-1" id="textarea" cols="70" rows="1"></textarea>
+                            </div>
                         </div>
                         
                         <div class="configuracaoReply m-4">
                             <a href=""> <i class="bi bi-globe2"></i> Everyone can reply</a>
                         </div>
                         
-                        <div class="multimidea m-4 d-inline-flex" >
-                            <a href=""><i class="bi bi-card-image"></i> </a>
-                            <a href=""><i class="bi bi-filetype-doc" ></i></a>
-                            <a href=""><i class="bi bi-emoji-smile"></i></a>
-                            <a href=""><i class="bi bi-bar-chart"></i></a>
-                            <a href=""><i class="bi bi-calendar-week"></i></a>
-                            <a href=""><i class="bi bi-geo-alt"></i></a>
+                        <div class="d-flex justify-content-between">
+                            <div class="multimidea m-4" >
+                                <a href=""><i class="bi bi-card-image"></i> </a>
+                                <a href=""><i class="bi bi-filetype-doc" ></i></a>
+                                <a href=""><i class="bi bi-emoji-smile"></i></a>
+                                <a href=""><i class="bi bi-bar-chart"></i></a>
+                                <a href=""><i class="bi bi-calendar-week"></i></a>
+                                <a href=""><i class="bi bi-geo-alt"></i></a>
+                            </div>
+                            
+                            <div class="statusEnvio d-flex">
+                                
+                                <strong><p class="" id="contador"></p></strong>    
+                                <strong><span class="ml-2"> | </span></strong> 
+                                
+                                <a href=""><i class="bi bi-plus-circle"></i></a>
+                                <button type="button" class="btn btn-primary" id="btnEnviar">Enviar</button>
+                                
+                            </div>
                         </div>
                         
-                        <div class="statusEnvio d-inline-flex">
-                            
-                            <strong><p class="" id="contador"></p></strong>    
-                            <strong><span class="ml-2"> | </span></strong> 
-                            
-                            <a href=""><i class="bi bi-plus-circle"></i></a>
-                            <button type="button" class="btn btn-primary" id="btnEnviar">Enviar</button>
-                            
-                        </div>
-                        
-                    </div>    
-                   
-
-                    
+                    </div>                      
 
                     <div class="recentsTzeets">
                         <div class="border-bottom">
@@ -130,8 +131,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- coluna da esquerda --> 
                 </div>
 
                 <!-- cloluna da direita -->
@@ -173,31 +172,33 @@
             </div>
 
             <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
+                <div class="modal-dialog modal-lg" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel"></h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                         <span aria-hidden="true">&times;</span>
-                      </button>
+                        </button>
                     </div>
                     <div class="modal-body">
-                        <div class="header m-4">
-                            <div class="foto d-inline-flex">
-                                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQE9yYBO3Fnawg/profile-displayphoto-shrink_800_800/0/1606330548603?e=1654732800&amp;v=beta&amp;t=DiUM_AR1RFZusdvHFjYkelaXhbv7xVkzh6rVJAHTXvk" class="rounded-circle" alt = fotoperfil width="150">    
-                            </div>
-    
-                           <div class="textarea m-4 d-inline-flex">
-                                <textarea class="form-control border-1" name="" id="textareaModal" cols="70" rows="1"></textarea>
+                        <div class="header m-2">
+                            <div class="d-flex align-items-center">
+                                <div class="foto flex-shirink-0">
+                                    <img src="https://media-exp1.licdn.com/dms/image/C4D03AQE9yYBO3Fnawg/profile-displayphoto-shrink_800_800/0/1606330548603?e=1654732800&amp;v=beta&amp;t=DiUM_AR1RFZusdvHFjYkelaXhbv7xVkzh6rVJAHTXvk" class="rounded-circle" alt = fotoperfil width="150">    
+                                </div>
+        
+                               <div class="flex-grow-1 ms-3 align-items-center">
+                                    <textarea class="form-control border-1" id="textareaModal" cols="70" rows="1"></textarea>
+                                </div>
                             </div>
                             
                             <div class="configuracaoReply m-4">
                                 <a href=""> <i class="bi bi-globe2"></i> Everyone can reply</a>
-                            </div>    
-                        </div>    
+                            </div>        
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <div class="multimidea m-4 d-inline-flex" >
+                    <div class="modal-footer d-flex justify-content-between">
+                        <div class="multimidea m-4" >
                             <a href=""><i class="bi bi-card-image"></i> </a>
                             <a href=""><i class="bi bi-filetype-doc" ></i></a>
                             <a href=""><i class="bi bi-emoji-smile"></i></a>
@@ -206,14 +207,14 @@
                             <a href=""><i class="bi bi-geo-alt"></i></a>
                         </div>
                         
-                        <div class="statusEnvio d-inline-flex">
+                        <div class="statusEnvio d-flex">
                             
                             <strong><p class="" id="contadorModal"></p></strong>    
                             <strong><span class="ml-2"> | </span></strong> 
                             
                             <a href=""><i class="bi bi-plus-circle"></i></a>
                             <button type="button" class="btn btn-primary" id="btnEnviarModal">Enviar</button>
-                            
+                        
                         </div>
                     </div>
                   </div>

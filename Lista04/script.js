@@ -2,6 +2,7 @@ window.addEventListener("load", function(){
 
     var textArea = document.getElementById("textarea")
     var textAreaModal = document.getElementById("textareaModal")
+    console.log(textAreaModal)
 
     var contador = document.getElementById("contador")
 
