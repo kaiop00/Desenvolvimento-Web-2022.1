@@ -1,30 +1,24 @@
 window.addEventListener("load", function(){
 
     var textArea = document.getElementById("textarea")
-    console.log(textArea)
+    var textAreaModal = document.getElementById("textareaModal")
 
     var contador = document.getElementById("contador")
 
-    var btnEnviar = document.querySelector("#btnEnviar")
-    
-    console.log(btnEnviar)
+    let btnEnviar = document.getElementById("btnEnviar")
+    btnEnviar.disabled =  true
 
-    btnEnviar.disabled = true
-    
-
-    console.log(btnEnviar.disable)
-
-    console.log(contador);
+    let btnEnviarModal = document.getElementById("btnEnviarModal")
+    btnEnviarModal.disabled =  true
 
     var maxChar = 140
-
     
     function statusEnvio (textarea, cont, btn) {
         let contagem = maxChar - textarea.value.length
         
         cont.innerHTML = contagem
 
-        if(textArea.value.length === 0){
+        if(textarea.value.length === 0){
             btn.disabled = true
             cont.style.color = "black"
         }
@@ -40,11 +34,22 @@ window.addEventListener("load", function(){
         }
     }
 
-
+    
     textArea.addEventListener("input", function(){
+
         statusEnvio(textArea, contador, btnEnviar)
         
         textArea.style.height = "auto"
         textArea.style.height = `${this.scrollHeight}px`
+
+    })
+    
+    textAreaModal.addEventListener("input", function(){
+
+        statusEnvio(textAreaModal, contadorModal, btnEnviarModal)
+
+        textAreaModal.style.height = "auto"
+        textAreaModal.style.height = `${this.scrollHeight}px`
+
     }) 
 })
