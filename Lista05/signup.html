@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/validator.min.js"></script>
+    <script type="text/javascript"> $(window).on('load',function(){ $('#modalInscribe').modal('show'); }); </script>
+    
+    
+    <title>Lista 05 Desenvolvimento-Web-2022 </title>
+</head>
+
+<body class="bg-secondary">
+
+        <!-- Modal -->
+<div class="modal fade" id="modalInscribe" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalInscribe">Criar conta</h5>
+            <button type="button" class="btn-close"  aria-label="Close"></button>
+          </div> 
+        <div class="modal-body">
+           <form class="needs-validation" data-toggle="validator" role="form">
+                <div class="form-floating m-4">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Nome:"  required>
+                </div>
+
+                <div class="form-floating m-4">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="Email:"  data-error="Informe um e-mail válido." required>
+                </div>
+                <div class="help-block with-errors"></div>
+       
+                <div class="form-floating m-4">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Senha:" data-minlength="6" required>
+                </div>
+
+                <div class="form-floating m-4">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Confirme a senha:" data-minlength="6" required>
+                </div>
+
+            </form>
+           
+           <div class="m-4">
+                <h6>Data de Nascimento</h6>
+                <p> 
+                    Isso não será exibido publicamente. Confirme sua própria idade,
+                    mesmo se esta conta for de empresa, de um animal de estimação
+                    ou outros.
+                </p>
+
+                <div class="d-flex justify-content-center">
+                    <select name="" id="">
+                        <option selected>Mês</option>
+                        <option value=""></option>
+                    </select>
+                    
+                    <select name="" id="">
+                        <option selected>Dia</option>
+                    </select>
+
+                    <select name="" id="">
+                        <option selected>Ano</option>
+                    </select>
+               </div>
+           </div>
+
+           <div class="m-4">
+                <p>
+                    Receba e-mails sobre sua atividade no Twitter e recomendações.
+                    <br>
+                    Você concorda com nossos Termos, com a Política de Privacidade e
+                    com o Uso de Cookies?
+                </p>
+                
+                <div class="d-flex justify-content-center">
+                    <div class="form-check m-4">   
+                        <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioYes" checked>
+                        <label class="form-check-label" for="checkYes">
+                            Sim
+                        </label>
+                    </div>
+                    <div class="form-check m-4">
+                        <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioNo">
+                        <label class="form-check-label" for="checkNo">
+                            Não
+                        </label>
+                    </div>    
+                </div>
+           </div>
+           
+           <div class="d-flex justify-content-center">
+               <button type="submit" class="btn btn-primary btnInscrever">Se inscrever</button>
+           </div>
+              
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+      
+</body>
+</html>

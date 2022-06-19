@@ -13,7 +13,7 @@ window.addEventListener("load", function(){
     btnEnviarModal.disabled =  true
 
     var maxChar = 140
-    
+
     function statusEnvio (textarea, cont, btn) {
         let contagem = maxChar - textarea.value.length
         
@@ -52,5 +52,6 @@ window.addEventListener("load", function(){
         textAreaModal.style.height = "auto"
         textAreaModal.style.height = `${this.scrollHeight}px`
 
-    }) 
+    })
+    
 })

@@ -1,4 +1,4 @@
-# Desenvolvimento Web 2022.1
+# Desenvolvimento Web 2022.1 👨‍💻
 
 Repositório para as atividades feitas na disciplina de Desenvolvimento para Web de 2022.1 do curso de Engenharia de Software da UFC - Campus de Quixadá.
 

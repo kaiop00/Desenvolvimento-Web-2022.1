@@ -116,3 +116,13 @@ div.statusEnvio i:hover {
     background-color: rgb(29, 155, 240);
     border-radius: 20px;
 }
+
+.btnInscrever {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.btnEntrar {
+    width: 100%;
+    border-radius: 50px;
+}
