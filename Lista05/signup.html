@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
@@ -18,99 +20,118 @@
     <script src="js/validator.min.js"></script>
     <script type="text/javascript"> $(window).on('load',function(){ $('#modalInscribe').modal('show'); }); </script>
     
-    
     <title>Lista 05 Desenvolvimento-Web-2022 </title>
 </head>
 
 <body class="bg-secondary">
 
         <!-- Modal -->
-<div class="modal fade" id="modalInscribe" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="modalInscribe">Criar conta</h5>
-            <button type="button" class="btn-close"  aria-label="Close"></button>
-          </div> 
-        <div class="modal-body">
-           <form class="needs-validation" data-toggle="validator" role="form">
-                <div class="form-floating m-4">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Nome:"  required>
-                </div>
-
-                <div class="form-floating m-4">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="Email:"  data-error="Informe um e-mail válido." required>
-                </div>
-                <div class="help-block with-errors"></div>
-       
-                <div class="form-floating m-4">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Senha:" data-minlength="6" required>
-                </div>
-
-                <div class="form-floating m-4">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Confirme a senha:" data-minlength="6" required>
-                </div>
-
-            </form>
-           
-           <div class="m-4">
-                <h6>Data de Nascimento</h6>
-                <p> 
-                    Isso não será exibido publicamente. Confirme sua própria idade,
-                    mesmo se esta conta for de empresa, de um animal de estimação
-                    ou outros.
-                </p>
-
-                <div class="d-flex justify-content-center">
-                    <select name="" id="">
-                        <option selected>Mês</option>
-                        <option value=""></option>
-                    </select>
-                    
-                    <select name="" id="">
-                        <option selected>Dia</option>
-                    </select>
-
-                    <select name="" id="">
-                        <option selected>Ano</option>
-                    </select>
-               </div>
-           </div>
-
-           <div class="m-4">
-                <p>
-                    Receba e-mails sobre sua atividade no Twitter e recomendações.
-                    <br>
-                    Você concorda com nossos Termos, com a Política de Privacidade e
-                    com o Uso de Cookies?
-                </p>
+    <div class="modal fade" id="modalInscribe" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
                 
-                <div class="d-flex justify-content-center">
-                    <div class="form-check m-4">   
-                        <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioYes" checked>
-                        <label class="form-check-label" for="checkYes">
-                            Sim
-                        </label>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalInscribe">Criar conta</h5>
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                </div> 
+                
+                <div class="modal-body">
+                    <form class= "form-group needs-validation" novalidate>
+                        <div class="form-floating m-4">
+                            <input type="text" class="form-control" id="floatingName"  required>
+                            <label for="floatingName"> Nome:</label>
+                            <div class="valid-feedback">Good!</div>
+                        </div>
+
+                        <div class="form-floating m-4">
+                            <input type="email" class="form-control" id="floatingEmail"  data-error="Informe um e-mail válido." required>
+                            <label for="floatingEmail"> Email:</label>
+                        </div>
+                        <div class="help-block with-errors"></div>
+            
+                        <div class="form-floating m-4">
+                            <input type="password" class="form-control" id="floatingPass"  data-minlength="6" required>
+                            <label for="floatingPass"> Senha:</label>
+                        </div>
+
+                        <div class="form-floating m-4">
+                            <input type="password" class="form-control" id="floatingConfirmPass"  data-minlength="6" required>
+                            <label for="floatingpConfirmPass"> Confirme a senha:</label>
+                        </div>
+
+                    </form>
+
+                
+                    <div class="m-4">
+                            <h6>Data de Nascimento</h6>
+                            <p> 
+                                Isso não será exibido publicamente. Confirme sua própria idade,
+                                mesmo se esta conta for de empresa, de um animal de estimação
+                                ou outros.
+                            </p>
+
+                            <div class="d-flex justify-content-center">
+
+                                <div class="form-floating">
+                                    <select class="form-select" id="selectMonth">
+                                        <option selected></option>
+                                        <option value=""></option>
+                                        
+                                    </select>
+                                    <label for="selectMonth">Mês:</label>
+                                </div>
+
+                                <div class="form-floating">
+                                    <select class="form-select" id="selecDay">
+                                        <option selected></option>
+                                        <option value=""></option>
+                                    </select>
+                                    <label for="selectDay">Dia:</label>
+                                </div>
+
+                                <div class="form-floating">
+                                    <select class="form-select" id="selectYear">
+                                        <option selected>One</option>
+                                        <option value="">Tow</option>
+                                    </select>
+                                    <label for="selectYear">Ano:</label>
+                                </div>
+                            </div>
                     </div>
-                    <div class="form-check m-4">
-                        <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioNo">
-                        <label class="form-check-label" for="checkNo">
-                            Não
-                        </label>
-                    </div>    
+
+                    <div class="m-4">
+                            <p>
+                                Receba e-mails sobre sua atividade no Twitter e recomendações.
+                                <br>
+                                Você concorda com nossos Termos, com a Política de Privacidade e
+                                com o Uso de Cookies?
+                            </p>
+                            
+                            <div class="d-flex justify-content-center">
+                                <div class="form-check m-4">   
+                                    <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioYes" checked>
+                                    <label class="form-check-label" for="checkYes">
+                                        Sim
+                                    </label>
+                                </div>
+                                <div class="form-check m-4">
+                                    <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioNo">
+                                    <label class="form-check-label" for="checkNo">
+                                        Não
+                                    </label>
+                                </div>    
+                            </div>
+                    </div>
+                
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary btnInscrever">Se inscrever</button>
+                    </div>
+                    
                 </div>
-           </div>
-           
-           <div class="d-flex justify-content-center">
-               <button type="submit" class="btn btn-primary btnInscrever">Se inscrever</button>
-           </div>
-              
+                
+            </div>
         </div>
-        
-      </div>
     </div>
-  </div>
-  
-      
+    
 </body>
 </html>
