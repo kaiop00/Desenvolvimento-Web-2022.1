@@ -25,43 +25,44 @@
 <body class="bg-secondary">
 
         <!-- Modal -->
-<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body ">
-            <div class="d-flex justify-content-center m-4">
-                <img src="./img/tiziu.png" alt="">
-            </div>
-            <h5 class="m-4">Entre no Tzeet agora mesmo!</h5>
-           <form class="needs-validation" data-toggle="validator" role="form">
-                <div class="form-floating m-4">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="Email:"  data-error="Informe um e-mail válido." required>
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body ">
+                <div class="d-flex justify-content-center m-4">
+                    <img src="./img/tiziu.png" alt="">
                 </div>
-                <div class="help-block with-errors"></div>
-       
-                <div class="form-floating m-4">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Senha:" data-minlength="6" required>
-                </div>
+                <h5 class="m-4">Entre no Tzeet agora mesmo!</h5>
+            <form class="needs-validation" novalidate>
+                    <div class="form-floating m-4">
+                        <input type="email" class="form-control" id="floatingEmail" placeholder="Email:" required>
+                    </div>
+                    <div class="invalid-feedback">Este email é invalido</div>
+        
+                    <div class="form-floating m-4">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Senha:" data-minlength="6" required>
+                    </div>
 
-            </form>
-           
-            <div class="m-4">
-                <a href="http://" target="_self" >Esqueceu a senha?</a>
-            </div>
-           
-            <div class="m-4">
-                <button type="submit" class="btn btn-primary btnEntrar">Entrar</button>
+                </form>
+            
+                <div class="m-4">
+                    <a href="http://" target="_self" >Esqueceu a senha?</a>
+                </div>
+            
+                <div class="m-4">
+                    <button type="submit" class="btn btn-primary btnEntrar">Entrar</button>
+                </div>
+                
+                <div class="m-4">
+                    Não tem uma conta?<a href="./signup.html" target="_self"> Inscreva-se</a>
+                </div>
+                
+                
             </div>
             
-            <div class="m-4">
-                Não tem uma conta?<a href="./signup.html" target="_self"> Inscreva-se</a>
-            </div>
-              
         </div>
-        
-      </div>
+        </div>
     </div>
-  </div>
   
       
 </body>
