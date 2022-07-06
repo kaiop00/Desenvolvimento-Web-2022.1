@@ -1,0 +1,24 @@
+{
+  "name": "dsant_store",
+  "version": "1.0.0",
+  "description": "Online Store DSant",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EdOliveiraJr/Desenvolvimento-Web-2022.1/ProjetoFinal"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cypress": "^10.3.0",
+    "express": "^4.18.1",
+    "vite": "^2.9.13",
+    "vue": "^3.2.37",
+    "yarn": "^1.22.19"
+  }
+}
